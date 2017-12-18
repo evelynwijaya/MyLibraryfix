@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.mylibrary2.LoginActivity">
+
+    <TextView
+        android:layout_margin="16px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail: "/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_margin="16px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_margin="16px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password: "/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_margin="16px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"/>
+
+    <CheckBox
+        android:id="@+id/ck_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16px"
+        android:text="LOGIN"/>
+
+    <TextView
+        android:id="@+id/tv_gagal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username atau Password SALAH!!"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:visibility="invisible"/>
+</LinearLayout>
